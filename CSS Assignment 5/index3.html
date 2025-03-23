@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+        .body{
+            background-image: url(./skypic.jpg);
+            height: 510px;
+            width: 100%;
+
+        }
+        .paragraph{
+            display: flex;
+            justify-content: center;
+            z-index: 1;
+        }
+        .p1{
+            font-size: 35px;
+            font-weight: bold;
+            background-color: orange;
+        }
+        .p2{
+            font-size: 35px;
+            font-weight: bold;
+            background-color: white;
+            margin-left: 5px;
+        }
+        .p3{
+            font-size: 35px;
+            font-weight: bold;
+            background-color: green;
+            margin-left: 5px;
+        }
+        .sunimg{
+            height: 100px;
+            width: 100px;
+        }
+        .city > img{
+            width: calc(100% + 15px);
+            height: 300px;
+            padding-bottom: -5px;
+        }
+        .carimg{
+            height: 200px;
+            width: 450px;
+        }
+        .wheels{
+            margin-top: -97px;
+        }
+        .wheel1{
+            height: 70px;
+            width: 70px;
+            margin-left: 45px;
+            animation-name: wheel1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes wheel1 {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .wheel2{
+            height: 70px;
+            width: 70px;
+            margin-left: 200px;
+            animation-name: wheel1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        .car{
+            margin-top: -86px;
+           margin-left: 252px;
+           position: relative;
+           z-index: 1;
+        }
+        .main{
+           background-image: url(./roadpic.jpg);
+           height: 210px;
+           width: 500%;
+           position: relative;
+           background-repeat: repeat;
+           background-size: cover;
+           animation-name: road;
+           animation-duration: 10s;
+           animation-iteration-count: infinite;
+           animation-timing-function: linear;
+           margin-top: -110px;
+        }
+        @keyframes road {
+            0%{
+                right: 0%;
+            }
+            100%{
+                right: 100%;
+            }
+        }
+        .flag{
+            height: 70px;
+            width: 70px;
+            margin-left: 580px;
+            margin-top: -250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+        <div class="paragraph">
+            <p class="p1">HAPPY</p>
+            <p class="p2">INDEPENDENCE</p>
+            <p class="p3">DAY</p>
+        </div>
+        <div class="sun">
+            <marquee direction="left">
+                <img src="./sunpic.png" alt="" class="sunimg">
+            </marquee>
+        </div>
+        <div class="city">
+            <img src="./citypic.png" alt="">
+        </div>
+    </div>
+    <img src="./flagpic.png" alt="" class="flag">
+    <div class="car">
+        <img src="./carpic.png" alt="" class="carimg"><br>
+        <div class="wheels">
+            <img src="./wheelpic.png" alt="" class="wheel1">
+            <img src="./wheelpic.png" alt="" class="wheel2">
+        </div>
+    </div>
+    <div class="main"></div>
+    
+</body>
+</html>

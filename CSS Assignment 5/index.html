@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+        .main{
+            height: 800px;
+            width: 600px;
+            margin: 0px auto;
+            text-align: center;
+        }
+        .first{
+            display: flex;
+            justify-content: space-between;
+            height: 120px;
+            width: 500px;
+            margin-bottom: 40px;
+        }
+        .card3rd{
+            height: 110px;
+            width: 100px;
+            background-color: #008080;
+            margin-left: 30px;
+            animation-name: transform;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes transform {
+            10%{
+                transform: skewX(-20deg);
+            }
+            20%{
+                transform: skewX(20deg);
+            }
+            30%{
+                transform: skewX(-20deg);
+            }
+            40%{
+                transform: skewX(20deg);
+            }
+            50%{
+                transform: skewX(-20deg);
+            }
+            60%{
+                transform: skewX(20deg);
+            }
+            70%{
+                transform: skewX(-20deg);
+            }
+            80%{
+                transform: skewX(20deg);
+            }
+            90%{
+                transform: skewX(-20deg);
+            }
+            100%{
+                transform: skewX(20deg);
+            }
+        }
+        .card4th{
+            height: 110px;
+            width: 100px;
+            background-color: #2f4f4f;
+            margin-left: 30px;
+            animation-name: transform2;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes transform2 {
+            10%{
+                transform: skewY(-20deg);
+            }
+            20%{
+                transform: skewY(20deg);
+            }
+            30%{
+                transform: skewY(-20deg);
+            }
+            40%{
+                transform: skewY(20deg);
+            }
+            50%{
+                transform: skewY(-20deg);
+            }
+            60%{
+                transform: skewY(20deg);
+            }
+            70%{
+                transform: skewY(-20deg);
+            }
+            80%{
+                transform: skewY(20deg);
+            }
+            90%{
+                transform: skewY(-20deg);
+            }
+            100%{
+                transform: skewY(20deg);
+            }
+        }
+        .card5th{
+            height: 110px;
+            width: 100px;
+            background-color: #008080;
+            margin-left: 30px;
+            animation-name: transform3;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes transform3 {
+            0%{
+               transform: rotate(1deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .card6th{
+            height: 110px;
+            width: 100px;
+            background-color: #87ceeb;
+            margin-left: 30px;
+            animation-name: transform4;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes transform4 {
+            0%{
+               transform: rotateX(60deg);
+            }
+            100%{
+               transform: rotateX(-60deg);
+            }
+        }
+        .card7th{
+            height: 110px;
+            width: 100px;
+            background-color: #800000;
+            margin-left: 30px;
+            animation-name: transform5;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes transform5 {
+            0%{
+               transform: rotateY(60deg);
+            }
+            100%{
+               transform: rotateY(-60deg);
+            }
+        }
+        .card8th{
+            height: 110px;
+            width: 100px;
+            background-color: #008000;
+            margin-left: 30px;
+            animation-name: transform6;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes transform6 {
+            50%{
+                transform: rotate(90deg);
+            }
+        }
+
+        a{
+            font-size: 30px;
+            color: #701a8b;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Try to relicate this</h1>
+     <ol>
+        <li>
+            <div class="first">
+                <div class="card3rd"></div>
+                <div class="card3rd"></div>
+                <div class="card3rd"></div>
+            </div>
+        </li>
+        <li>
+            <div class="first">
+                <div class="card4th"></div>
+                <div class="card4th"></div>
+                <div class="card4th"></div>
+            </div>
+        </li>
+        <li>
+            <div class="first">
+                <div class="card5th"></div>
+                <div class="card5th"></div>
+                <div class="card5th"></div>
+            </div>
+        </li>
+        <li>
+            <div class="first">
+                <div class="card6th"></div>
+                <div class="card7th"></div>
+                <div class="card8th"></div>
+            </div>
+        </li>
+     </ol>
+     <a href="./index2.html" target="_blank">Let's go and try another things</a>
+    </div>
+</body>
+</html>
